@@ -1,8 +1,8 @@
 // index.js
 const express = require("express");
 const path = require("path");
-const { connectToMongoDB } = require("./connect");
-const urlRoute = require("./routes/url"); // ✅ Corrected
+const { connectToMongoDB } = require("./connect.js");
+const urlRoute = require("./SHORT_URL/routes/url.js"); // ✅ Corrected
 
 // MongoDB connect
 connectToMongoDB("mongodb://127.0.0.1:27017/short-url")
